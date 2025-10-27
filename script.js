@@ -33,7 +33,7 @@ const SLIDE_DECK_CONTENT = [
     "slideNumber": 6,
     "type": "checkbox",
     "title": "Non-modifiable Risk Factors",
-    "question": "Of the risk factors shown above, which of them would be defined as non-modifiable risk factors? **There is more than one correct answer",
+    "question": "Of these risk factors, which of them would be defined as non-modifiable risk factors? **There is more than one correct answer",
     "options": [
       "BMI",
       "Waist Measurement",
@@ -53,7 +53,7 @@ const SLIDE_DECK_CONTENT = [
     "slideNumber": 7,
     "type": "textInput",
     "title": "Calculating Calvin's BMI",
-    "question": "Height: 186 cm\nWeight: 100 kg\n\nType your answer in the text box below (keep all working to 1 decimal place).",
+    "question": "In order to treat Calvin effectively we must first do a preliminary clinical assessment to identify his risk factors. Firstly, we must calculate his BMI based on his: Height: 186 cm\nWeight: 100 kg\n\nType your answer in the text box below (keep all working to 1 decimal place).",
     "label": "Enter Answer:",
     "correctAnswer": "28.9",
     "feedback": "Correct! Well done! Click 'Next' to continue."
@@ -62,18 +62,18 @@ const SLIDE_DECK_CONTENT = [
     "slideNumber": 8,
     "type": "radio",
     "title": "The Cholesterol Test",
-    "question": "Is there a problem with having cholesterol checked at a health booth and what would the result be? Select from the key words.",
+    "question": "Calvin’s current physical activity includes lifting weights (if he is somewhere where there is a gym) and a game of golf each week. Family history: father alive at 77 years, but had a heart attack from 45 years of age. No other family history of note. The aim of this case study is for you, as an exercise professional, to identify safe and effective strategies that will help Calvin reduce his blood pressure to a normal level, and improve his waist measurement and overall cardiovascular health.Before we move on, we must consider an important factor in Calvin’s assessment. Is there a problem with having cholesterol checked at a health booth and if so what is the most likley effect? Select from the key words.",
     "options": ["Yes", "No", "False positive", "False negative"],
-    "correctAnswer": "False positive",
+    "correctAnswer": ["False positive", "Yes"],
     "feedback": "Potentially, yes. If the person is not fasting or has a fatty residue from a hand cream on their hands, this test will not give you a true indication of the cholesterol level. For example, the patient may give a false positive result, that is, a result higher than usual."
   },
   {
     "slideNumber": 9,
     "type": "textInput",
     "title": "Defining and Translating Personal Goals",
-    "question": "List one short term goal below:",
-    "label": "Short term goal:",
-    "correctAnswer": "To reduce his blood pressure to less than 140/90 in four weeks",
+    "question": "Looking back at Calvin’s Pre-Exercise Screening and the information you have gathered, it’s important to help him establish realistic goals. Calvin wants to exercise regularly, reduce his weight, blood pressure and waist measurement. Based on this information and the doctor’s referral/clinical indications, please write one short-term goal for his blood pressure and one long-term goal for his participation in regular exercise.List one short term goal below:",
+    "label": "List one short term goal below:",
+    "label": "List one LONG term goal below:",  
     "feedback": "Your short term goal for his blood pressure should look something like this: To reduce his resting blood pressure to less than 150/85mmHg within 8-12 weeks. \n\nYour long term goal for regular exercise should look something like this: To have Calvin completing any form of exercise for >40 minutes five days per week in 6 months from now.\n\nIf your goals look similar to these, congratulations, you are correct!"
   },
   {
