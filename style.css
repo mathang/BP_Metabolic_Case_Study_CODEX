@@ -68,6 +68,25 @@ body {
   font-size: 1.6rem;
 }
 
+.reference-button {
+  align-self: flex-start;
+  background: #3440eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reference-button:hover,
+.reference-button:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 .slide p,
 .slide label,
 .slide li,
