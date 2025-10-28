@@ -47,7 +47,7 @@ const SLIDE_DECK_CONTENT = [
       "Sedentary Profession"
     ],
     "correctAnswer": ["Age", "Male gender"],
-    "feedback": "Correct! Age and male gender are non-modifiable risk factors. In contrast, the others are modifiable, which means they can be addressed or brought to within normal ranges through diet, exercise, medications and/or lifestyle changes. In particular it is important to note, that even though his profession is sedentary, we can modify this risk factor by including regular activity breaks."
+    "feedback": "Age and male gender are non-modifiable risk factors. In contrast, the others are modifiable, which means they can be addressed or brought to within normal ranges through diet, exercise, medications and/or lifestyle changes. In particular it is important to note, that even though his profession is sedentary, we can modify this risk factor by including regular activity breaks."
   },
   {
     "slideNumber": 7,
@@ -56,7 +56,7 @@ const SLIDE_DECK_CONTENT = [
     "question": "In order to treat Calvin effectively we must first do a preliminary clinical assessment to identify his risk factors. Firstly, we must calculate his BMI based on his: Height: 186 cm\nWeight: 100 kg\n\nType your answer in the text box below (keep all working to 1 decimal place).",
     "label": "Enter Answer:",
     "correctAnswer": "28.9",
-    "feedback": "Correct! Well done! Click 'Next' to continue."
+    "feedback": "Click 'Next' to continue."
   },
   {
     "slideNumber": 8,
@@ -124,7 +124,7 @@ const SLIDE_DECK_CONTENT = [
       }
     ],
     "correctAnswer": "6",
-    "feedback": "Correct! The total score is 6."
+    "feedback": "The total score is 6."
   },
   {
     "slideNumber": 11,
@@ -133,13 +133,14 @@ const SLIDE_DECK_CONTENT = [
     "question": "From the previous slide we learnt that Calvin's Risk Score was 6. What is Calvin's Initial ACSM Risk Category?",
     "options": ["Low", "Moderate", "High"],
     "correctAnswer": "Moderate",
-    "feedback": "Correct! Calvin's Initial ACSM Risk Category is Moderate. Calvin has six risk factors and is automatically moderate risk as he is male and over the age of 45 years. He falls into the moderate risk category. He is not high risk because he does not have diagnosed disease, or symptoms. High HDL level is 1.0 mmol/L which is not high enough to be protective. Therefore, you cannot subtract one for this risk score."
+    "feedback": "Calvin's Initial ACSM Risk Category is Moderate. Calvin has six risk factors and is automatically moderate risk as he is male and over the age of 45 years. He falls into the moderate risk category. He is not high risk because he does not have diagnosed disease, or symptoms. High HDL level is 1.0 mmol/L which is not high enough to be protective. Therefore, you cannot subtract one for this risk score."
   },
   {
     "slideNumber": 12,
     "type": "dropdown_multi",
     "title": "Physician Supervision Recommendation",
-    "questions": [
+    "content": "With an initial ACSM Risk Category of moderate, it is now necessary to examine whether Calvin needs to be supervised by a physician during testing. There are several key questions that need to be asked to complete the assessment. Answer either Not Necessary or Recommended for each question below.",
+      "questions": [
       {
         "q": "What is the recommendation for Calvin with respect to requiring a physician to supervise him during his submaximal exercise test?",
         "options": ["Not Necessary", "Recommended"],
@@ -161,7 +162,7 @@ const SLIDE_DECK_CONTENT = [
         "correct": "Recommended"
       }
     ],
-    "feedback": "Well done! The correct responses are as follows:\n- Submaximal test: Not necessary\n- Maximal exercise test: Recommended\n- Moderate intensity exercise: Not necessary\n- High or vigorous intensity exercise: Recommended"
+    "feedback": "The correct responses are as follows:\n- Submaximal test: Not necessary\n- Maximal exercise test: Recommended\n- Moderate intensity exercise: Not necessary\n- High or vigorous intensity exercise: Recommended"
   },
   {
     "slideNumber": 13,
@@ -176,7 +177,7 @@ const SLIDE_DECK_CONTENT = [
     "slideNumber": 14,
     "type": "checkbox",
     "title": "Barriers to Exercise",
-    "question": "What are the patient's potential barriers to exercise and possible solutions?",
+    "question": "What are the patient's potential barriers to exercise that can be determined based on the available information?",
     "options": [
       "Profession",
       "Availability of exercise facilities",
@@ -184,7 +185,7 @@ const SLIDE_DECK_CONTENT = [
       "Equally at-risk spouse"
     ],
     "correctAnswer": ["Profession", "Availability of exercise facilities"],
-    "feedback": "Correct! Profession: As an airline pilot he would be doing a lot of travel, hence time would be an issue. Availability of exercise facilities: Long flights and odd working hours would mean that immediate access to gym facilities would be limited. Supportive home environment: Is his wife supportive of his much needed life style change, or does she share her husband's unhealthy choice of lifestyle? For the moment, this is not a potential barrier, however, more questions would need to be asked to confirm this."
+    "feedback": "Profession: As an airline pilot he would be doing a lot of travel, hence time would be an issue. Availability of exercise facilities: Long flights and odd working hours would mean that immediate access to gym facilities would be limited. Supportive home environment: Is his wife supportive of his much needed life style change, or does she share her husband's unhealthy choice of lifestyle? For the moment, this is not a potential barrier, however, more questions would need to be asked to confirm this."
   },
   {
     "slideNumber": 15,
@@ -199,13 +200,13 @@ const SLIDE_DECK_CONTENT = [
       "HR and BP pre and post exercise and heart rate, BP and RPE at 3-5 minute intervals during exercise."
     ],
     "correctAnswer": "Pre and post HR and BP, as well as HR and RPE at 5-10 minute intervals during exercise.",
-    "feedback": "Correct! As we do not have any results of a clinical exercise test, we have to keep him clinically safe. Therefore, if training is supervised HR, BP (pre, post & at 5-10 min intervals during exercise) until predictable response is occurring then once per mode of exercise. RPE should be monitored as well to ensure it is not too high. He should be instructed that his RPE should be kept within a definite range below his hypertensive threshold determined from his clinical exercise test."
+    "feedback": "As we do not have any results of a clinical exercise test, we have to keep him clinically safe. Therefore, if training is supervised HR, BP (pre, post & at 5-10 min intervals during exercise) until predictable response is occurring then once per mode of exercise. RPE should be monitored as well to ensure it is not too high. He should be instructed that his RPE should be kept within a definite range below his hypertensive threshold determined from his clinical exercise test."
   },
   {
     "slideNumber": 16,
     "type": "checkbox",
     "title": "Exercise Prescription",
-    "question": "We first need to choose an appropriate mode of exercise to help Calvin reduce his risk (there are at least two correct)",
+    "question": "It's now time to write an exercise program for your client. We first need to choose an appropriate mode of exercise to help Calvin reduce his risk (there are at least two correct answers - select all you think are applicable)",
     "options": [
       "Flexibility Training",
       "Aerobic Exercise Training",
@@ -218,29 +219,44 @@ const SLIDE_DECK_CONTENT = [
       "Core Stability Training",
       "Progressive Resistance Training"
     ],
-    "feedback": "Correct! Calvin would benefit from both aerobic and progressive resistance training. If you added core stability, that's excellent, as with his back pain he would definitely benefit from this."
+    "feedback": "Calvin would benefit from both aerobic and progressive resistance training. If you added core stability, that's excellent, as with his back pain he would definitely benefit from this."
   },
-  {
-    "slideNumber": 17,
-    "type": "checkbox",
-    "title": "Aerobic Exercise Training",
-    "question": "What question would you ask to ensure Calvin adheres to an exercise program?\n\nAre there any precautions to take into account for his exercise intensity?",
-    "options": [
-      "Tell Calvin to join a gym.",
-      "Identify an exercise he can do easily away from home, when overseas.",
-      "Ask Calvin which type of exercise he likes to do most.",
-      "Ask Calvin which type of exercise he likes to do the most, and identify which types of exercise he could easily complete away from home.",
-      "His knee and lower back pain.",
-      "Whether he has a hypertensive threshold.",
-      "Exercise training location."
-    ],
-    "correctAnswer": [
-      "Ask Calvin which type of exercise he likes to do the most, and identify which types of exercise he could easily complete away from home.",
-      "His knee and lower back pain.",
-      "Whether he has a hypertensive threshold."
-    ],
-    "feedback": "Correct! You should ask Calvin which type of exercise he likes to do and as he enjoys walking and it is easy to do away from home you may want to do interval walking at a moderate to high intensity. Exercise intensity would depend on whether Calvin has an ischaemic or hypertensive threshold, which we would see during stress testing. If he does, then he needs to train below the intensity at which this occurred."
-  },
+{
+  "slideNumber": 17,
+  "type": "multiQuestion",   // <-- use a custom type your engine treats as containing multiple sub-questions
+  "title": "Aerobic Exercise Training",
+  "questions": [
+    {
+      "id": "adherence",
+      "prompt": "What question would you ask to ensure Calvin adheres to an exercise program?",
+      "type": "single",
+      "options": [
+        "Tell Calvin to join a gym.",
+        "Identify an exercise he can do easily away from home, when overseas.",
+        "Ask Calvin which type of exercise he likes to do most.",
+        "Ask Calvin which type of exercise he likes to do the most, and identify which types of exercise he could easily complete away from home."
+      ],
+      "correctAnswer": "Ask Calvin which type of exercise he likes to do the most, and identify which types of exercise he could easily complete away from home.",
+      "feedback": "You should ask Calvin which type of exercise he likes to do and, as he enjoys walking and it is easy to do away from home, you may want to prescribe interval walking at a moderate to high intensity."
+    },
+    {
+      "id": "precautions",
+      "prompt": "Are there any precautions to take into account for his exercise intensity? (Select all that apply.)",
+      "type": "checkbox",
+      "options": [
+        "His knee and lower back pain.",
+        "Whether he has a hypertensive threshold.",
+        "Exercise training location."
+      ],
+      "correctAnswer": [
+        "His knee and lower back pain.",
+        "Whether he has a hypertensive threshold."
+      ],
+      "feedback": "Exercise intensity should remain below any ischaemic or hypertensive threshold observed during stress testing. Also consider his knee and lower back pain when prescribing intensity."
+    }
+  ]
+}
+,
   {
     "slideNumber": 18,
     "type": "dropdown",
@@ -256,7 +272,7 @@ const SLIDE_DECK_CONTENT = [
       "All of the above"
     ],
     "correctAnswer": "All of the above",
-    "feedback": "Correct! All these tests could be appropriate. If he can join a gym (like the ones that is suited all over the world), then you should complete a RM test for each of the major muscle groups. If he can not and does not want to join the gym, you should use functional tests such as the lunge, squat, push up, abdominal flexor endurance and plank to assess his muscle strength."
+    "feedback": "Correct! All these tests could be appropriate. If he can join a gym that has global locations, then you should complete a RM test for each of the major muscle groups. If he can not and does not want to join the gym, you should use functional tests such as the lunge, squat, push up, abdominal flexor endurance and plank to assess his muscle strength."
   },
   {
     "slideNumber": 19,
@@ -272,50 +288,44 @@ const SLIDE_DECK_CONTENT = [
       "All of the above"
     ],
     "correctAnswer": "All of the above",
-    "feedback": "Correct! Blood pressure: Calvin will need to have his blood pressure monitored regularly and make sure he exercises below any thresholds. If possible he should get his BP measured at least once in the unengaged limb, during the active phase of weight training to check it is not spiking. He should also have it monitored on the upright bike and with overhead resistance training. His exercise technique needs to be watched. Watch the patient continues to breathe properly during each mode of exercise. And if doing free standing functional training ensure the technique is correct so he doesn't cause any knee or back pain. He should have his blood glucose levels checked regularly to ensure he does not develop diabetes. When he is at home in Sydney, he should complete supervised exercise sessions to ensure he is on track and training at the correct intensities."
+    "feedback": "Blood pressure: Calvin will need to have his blood pressure monitored regularly and make sure he exercises below any thresholds. If possible he should get his BP measured at least once in the unengaged limb, during the active phase of weight training to check it is not spiking. He should also have it monitored on the upright bike and with overhead resistance training. His exercise technique needs to be watched. Watch the patient continues to breathe properly during each mode of exercise. And if doing free standing functional training ensure the technique is correct so he doesn't cause any knee or back pain. He should have his blood glucose levels checked regularly to ensure he does not develop diabetes. When he is at home in Sydney, he should complete supervised exercise sessions to ensure he is on track and training at the correct intensities."
   },
-  {
-    "slideNumber": 20,
-    "type": "info",
-    "title": "Exercise Precautions (Feedback)",
-    "content": "This slide is the feedback from the previous question (Slide 19). The prompt for Jules should auto-advance from the modal on slide 19 to slide 21, as slide 20 is just the feedback text."
-  },
+{
+  "slideNumber": 20,
+  "type": "radio",
+  "title": "Aerobic Exercise Intensity",
+  "question": "Having performed adequate aerobic and strength testing and identified possible barriers to completing a fitness program, what intensity should the aerobic component of the exercise program start at?",
+  "options": ["40% VO2Reserve", "60% VO2Reserve", "80% VO2Reserve"],
+  "correctAnswer": "60% VO2Reserve",
+  "feedback": "Current recommendations for metabolic syndrome are to exercise at about 60% VO2max or ~70% HRmax. This level maximizes benefits while minimizing possible adverse effects of more vigorous exercise. For weight loss, exercising at a lower intensity for longer decreases RER toward ~0.7, and longer durations increase total energy expenditure. If intensity is set too high, the patient may exceed a hypertensive threshold, which would blunt the exercise training effect on blood pressure."
+},
   {
     "slideNumber": 21,
-    "type": "radio",
-    "title": "Aerobic Exercise Intensity",
-    "question": "Having performed adequate aerobic and strength testing and identified possible barriers to completing a fitness program, what intensity would be the first component of the exercise program at?",
-    "options": ["40% VO2Reserve", "60% VO2Reserve", "80% VO2Reserve"],
-    "correctAnswer": "40% VO2Reserve",
-    "feedback": "Correct! Current recommendations for metabolic syndrome is exercising at an intensity of 40-70% VO2 max or 70% HR Max. The intensity is set at this level to maximise benefits of exercise and time effective, hence 40% VO2Reserve. In addition, the goal for weightloss is to burn fat over carbohydrate, therefore exercising at a lower intensity for a longer duration will decrease RER i.e. fat versus carbohydrate for longer helps increase energy expenditure. In addition, if we test the individual we can ensure he is exercising at an intensity below the hypertensive threshold, which will inhibit the exercise training effect on BP."
-  },
-  {
-    "slideNumber": 22,
     "type": "radio",
     "title": "Aerobic Exercise Duration",
     "question": "What time duration would you recommend for Calvin?",
     "options": ["<20 minutes", "20-30 minutes", ">40 minutes"],
     "correctAnswer": ">40 minutes",
-    "feedback": "Correct! Current recommendations are for >40 minutes, in fact the longer the better, as the overall aim for obesity and dyslipidaemia is to increase total energy expenditure."
+    "feedback": "Current recommendations are for >40 minutes, in fact the longer the better, as the overall aim for obesity and dyslipidaemia is to increase total energy expenditure."
   },
   {
-    "slideNumber": 23,
+    "slideNumber": 22,
     "type": "radio",
     "title": "Aerobic Exercise Frequency",
     "question": "How often per week would you tell Calvin to complete his exercise program?",
     "options": ["Daily", "3-4 days per week", "5 days per week"],
     "correctAnswer": "5 days per week",
-    "feedback": "Correct! Current recommendations for metabolic syndrome are to exercise 5 days per week. The effect of a single bout of exercise on insulin sensitivity lasts 24-72 hours. Depending on the exercise intensity and duration, the effect on insulin sensitivity is generally not greater than 72 hours, therefore it is recommended that the time between successive sessions is no more than 72 hours. That is, no more than 2 consecutive days without aerobic activity."
+    "feedback": "Current recommendations for metabolic syndrome are to exercise 5 days per week. The effect of a single bout of exercise on insulin sensitivity lasts 24-72 hours. Depending on the exercise intensity and duration, the effect on insulin sensitivity is generally not greater than 72 hours, therefore it is recommended that the time between successive sessions is no more than 72 hours. That is, no more than 2 consecutive days without aerobic activity."
   },
   {
-    "slideNumber": 24,
-    "type": "textInput",
-    "title": "PRT Exercise Prescription",
-    "question": "In the box below, using the FITT principle, write out your recommendations for PRT for someone with metabolic syndrome.",
-    "label": "Enter answer here:",
-    "correctAnswer": "Frequency 2-3 times per week, Intensity 40-80% 1RM, Type Whole body, Time 8-10 reps 2-3 sets",
-    "feedback": "Using the FITT principle, an appropriate answer would be:\n\nFrequency = 2-3 days per week\n\nIntensity = A range of intensities, but must keep below 50% 1RM for hypertensives until you know their response to PRT.\n\nType = Circuit or whole body training of the large muscle groups\n\nTime (Volume): Low intensity = High volume 2-3 x 12-20 reps. Moderate intensity = moderate volume 2-3 x 8-10 reps"
-  }
+  "slideNumber": 23,
+  "type": "textInput",
+  "title": "PRT Exercise Prescription",
+  "question": "Using the FITT principle, write out your recommendations for progressive resistance training (PRT) for someone with metabolic syndrome.",
+  "label": "Enter answer here:",
+  "correctAnswer": "Frequency: 2–3 times per week; Intensity: 40–80% 1RM (start below 50% for hypertensives); Type: Whole body or circuit training for large muscle groups; Time: 2–3 sets of 8–20 reps depending on intensity.",
+  "feedback": "Using the FITT principle, an appropriate answer would be:\\n\\n• Frequency: 2–3 days per week\\n• Intensity: A range of intensities, but keep below 50% 1RM for hypertensives until you know their response to PRT.\\n• Type: Circuit or whole-body training of the large muscle groups\\n• Time (Volume): Low intensity = high volume (2–3 × 12–20 reps); Moderate intensity = moderate volume (2–3 × 8–10 reps)."
+}
 ];
 
 const REFERENCE_SLIDE_NUMBERS = [3, 5];
